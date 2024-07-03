@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="picker-wrap">
+      <input type="color" class="color-picker color-flood" value="#E2EE0C" />
+      <input type="color" class="color-picker color-bg" value="#CBC6C9" />
+    </div>
+
+    <div class="one-face">
+      <div class="left-side svg-wrap">
+        <div class="inner">
+          <!-- <svg width="100%" height="100%">
+            <defs>
+              <filter id="feplayground-filter" x="0%" y="-0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                <feOffset result="Offset___1" in="SourceGraphic" dx="0" dy="0" x="0%" width="100%" y="0%" height="100%"></feOffset>
+                <feTurbulence result="Turbulence___1" type="fractalNoise" baseFrequency="0.872 0.872" seed="1" numOctaves="5" x="0%" width="100%" y="0%" height="100%"></feTurbulence>
+                <feFlood result="Flood___1" flood-color="#E2EE0C" flood-opacity="1" x="0%" width="100%" y="44.7%" height="100%"></feFlood>
+                <feDisplacementMap result="Displacement___Map___1" in="Flood___1" in2="Turbulence___1" xChannelSelector="G" yChannelSelector="B" scale="202.1" x="0%" width="100%" y="0%" height="100%"></feDisplacementMap>
+                <feComposite result="Composite___1" in="Displacement___Map___1" in2="Offset___1" operator="atop" x="0%" width="100%" y="0%" height="100%"></feComposite>
+              </filter>
+            </defs>
+            <rect class="bg-rect" fill="#CBC6C9" stroke="none" stroke-width="none" filter="url(#feplayground-filter)" x="0" y="0" width="100%" height="100%"></rect>
+          </svg> -->
+
+          <svg width="100%" height="100%">
+            <defs>
+              <filter id="feplayground-filter" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                <feOffset result="Offset___1" in="SourceGraphic" dx="0" dy="0" x="0%" width="100%" y="0%" height="100%"></feOffset>
+                <feTurbulence result="Turbulence___1" type="fractalNoise" baseFrequency="0.872 0.872" seed="1" numOctaves="5" x="0%" width="100%" y="0%" height="100%"></feTurbulence>
+                <feImage result="Image___1" href="/assets/right0.png" x="0%" width="100%" y="0%" height="100%" preserveAspectRatio="none"></feImage>
+                <feDisplacementMap result="Displacement___Map___1" in="Image___1" in2="Turbulence___1" xChannelSelector="G" yChannelSelector="B" scale="202.1" x="0%" width="100%" y="0%" height="100%"></feDisplacementMap>
+                <feComposite result="Composite___1" in="Displacement___Map___1" in2="Offset___1" operator="atop" x="0%" width="100%" y="0%" height="100%"></feComposite>
+              </filter>
+            </defs>
+            <rect class="bg-rect" fill="#CBC6C9" stroke="none" stroke-width="none" filter="url(#feplayground-filter)" x="0" y="0" width="100%" height="100%"></rect>
+          </svg>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <img src="/assets/right0.png" alt="" />
+      </div>
+    </div>
+
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
